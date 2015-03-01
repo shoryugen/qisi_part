@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Android Client</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_places">PlacesActivity</string>
+    <string name="bars">Bars</string>
+    <string name="clubs">Clubs</string>
+    <string name="cafes">Cafes</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="no_phone_number">No phone number</string>
+    <string name="no_image_url">No Image Url</string>
+    <string name="title_activity_twitter_places">TwitterPlacesActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>

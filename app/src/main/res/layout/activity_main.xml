@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@android:color/white"
+    >
+
+
+    <ImageButton
+        android:id="@+id/bars"
+        android:src="@drawable/bars1"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cafes"
+        android:layout_toLeftOf="@+id/restaurants"
+        android:layout_toStartOf="@+id/restaurants" />
+    <ImageButton
+        android:id="@+id/clubs"
+        android:src="@drawable/clubs"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bars"
+        android:layout_toLeftOf="@+id/restaurants"
+        android:layout_toStartOf="@+id/restaurants" />
+
+    <ImageButton
+        android:id="@+id/cafes"
+        android:src="@drawable/cafes"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="127dp"
+        android:layout_below="@+id/searchView"
+        android:layout_alignLeft="@+id/restaurants"
+        android:layout_alignStart="@+id/restaurants" />
+    <ImageButton
+        android:id="@+id/restaurants"
+        android:src="@drawable/restaurants"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/clubs"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="83dp"
+        android:layout_marginEnd="83dp" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        android:queryHint="Enter City Name"
+        android:visibility="visible"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/button_material_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:iconifiedByDefault="false"/>
+
+</RelativeLayout>
